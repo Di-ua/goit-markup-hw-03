@@ -16,8 +16,14 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
 }
-
-.work-list {
+li:not(:last-child) {
+  margin-right: 0;
+}
+.hero-title {
+  display: none;
+}
+.work-item {
+  display: ;
 }
 
 button:hover,
@@ -26,9 +32,17 @@ button:focus {
   background-color: var(--accent-background-color);
 }
 button {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 22px 6px;
+
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
+
   font-family: inherit;
+  text-decoration: none;
+  text-align: center;
 }
 
 .portfolio-title {
@@ -45,4 +59,16 @@ button {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
+}
+
+.examples-item {
+  display: inline-block;
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.examples-item:nth-child(3n) {
+  margin-right: 0;
+}
+.examples-item:not(:last-child) {
+  margin-right: 30px;
 }

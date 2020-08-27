@@ -18,14 +18,73 @@ body {
   letter-spacing: 0.03em;
 }
 
-ul {
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
+.flexbox {
+  display: flex;
+}
+
+.page-header .flexbox {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.page-header .contacts-item {
+  margin-right: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.link.logo {
+  margin-right: 90px;
+}
+
+.contacts {
+  display: flex;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section.no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 /* site-nav */
 
 .logotype {
@@ -72,37 +131,47 @@ a {
 }
 
 .contacts:active {
-  color: purple;
+  color: red;
 }
 
 /* hero */
 
+.hero-container {
+  text-align: center;
+}
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--hero-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  min-width: 595px;
 }
 
 .button {
+  display: flex;
+  border-radius: 4px;
+  min-width: 200;
+  padding: 10px 32px;
   background-color: var(--accent-background-color);
   color: var(--hero-text-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* section quolity*/
 
 .quolity-caption {
-  color: var(--hero-text-color);
+  display: none;
 }
 
 .quolity-title {
@@ -153,10 +222,27 @@ a {
   font-style: normal;
 }
 
-.connect > a {
+.connect a {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
+}
+.link .logotype {
+  color: black;
+}
+
+.service-item {
+  display: inline-block;
+  width: calc((100% - 30px * 2) / 3);
+}
+
+.staff-item {
+  display: inline-block;
+  width: calc((100% - 30px * 3) / 4);
+}
+
+.quolity-item .service-item .staff-item:not(:last-child) {
+  margin-right: 30px;
 }
