@@ -49,9 +49,10 @@ a {
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  margin-right: 50px;
 }
 
-.page-header .contacts-item {
+.contacts-item {
   margin-right: 50px;
 }
 
@@ -66,6 +67,10 @@ a {
 
 .site-nav {
   display: flex;
+}
+
+.link .logotype {
+  color: black;
 }
 
 .link.logo {
@@ -86,6 +91,7 @@ img {
   padding-top: 0;
   padding-bottom: 0;
 }
+
 /* site-nav */
 
 .logotype {
@@ -178,14 +184,25 @@ img {
 }
 
 /* section quolity*/
+.section.quolity {
+  padding-top: 94px;
+}
 
 .quolity-caption {
   display: none;
 }
 
+.quolity.list {
+  display: flex;
+}
+
+.quolity-item:not(:last-child) {
+  margin-right: 30px;
+}
 .quolity-title {
   font-weight: 700;
   font-size: 14px;
+
   line-height: 1.14;
 }
 
@@ -195,16 +212,15 @@ img {
   line-height: 1.7;
 }
 
-.staff {
-  background-color: var(--secondary-background-color);
-}
+/*Section service*/
 
-.service .staff {
+.service {
   display: flex;
   flex-wrap: wrap;
 }
 
-.service .staff {
+.section.service {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -213,28 +229,51 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
+.service-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*Section staff*/
+
+.staff {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section.staff {
+  background-color: var(--secondary-background-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .staff-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .staff-text {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.18;
-}
 
-.clients-link a:hover,
-.clients-link a:focus {
-  color: var(--accent-text-color);
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .service-item {
-  display: inline-block;
+  display: flex;
   width: calc((100% - 30px * 2) / 3);
+}
+
+.staff-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .staff-item {
@@ -242,25 +281,37 @@ img {
   width: calc((100% - 30px * 3) / 4);
 }
 
-.quolity-item .service-item .staff-item:not(:last-child) {
-  margin-right: 30px;
+/* footer */
+
+.footer {
+  background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-/* footer */
 .address {
   color: var(--hero-text-color);
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .connect a {
+  display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   text-decoration: none;
   font-size: 14px;
   line-height: 1.7;
 }
-.link .logotype {
-  color: black;
+
+.footer .logotype {
+  color: var(--hero-text-color);
+}
+
+.tel-number {
+  margin-top: 9px;
 }
