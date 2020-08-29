@@ -14,6 +14,7 @@ body {
 
   font-family: Roboto, sans-serif;
   font-weight: 400;
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
@@ -21,6 +22,11 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.section.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .hero-title {
@@ -37,10 +43,9 @@ button:focus {
 }
 
 button {
-  display: flex;
+  display: block;
   border-radius: 4px;
-  min-width: 130px;
-  padding: 22px 6px;
+  padding: 6px 22px;
 
   font-family: inherit;
   text-decoration: none;
@@ -53,7 +58,7 @@ button {
 
   color: var(--primary-text-color);
   background-color: var(--secondary-background-color);
-  border: 1px solid transparent;
+  border: 0;
 }
 
 .work-item {
@@ -64,6 +69,8 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 50px;
 }
 
 .work-item {
@@ -78,21 +85,12 @@ button {
   display: flex;
   flex-wrap: wrap;
 }
-
-.portfolio-image {
+.examples-item .portfolio-image {
 }
 
 .card-container {
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.examples-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.examples-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 img {
@@ -106,6 +104,15 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+.examples-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.card-container {
+  border: 1px solid #eeeeee;
+}
+
 .portfolio-title {
   font-style: normal;
   text-decoration: none;
@@ -128,7 +135,4 @@ img {
 
 .examples-item:nth-child(3n) {
   margin-right: 0;
-}
-.examples-item:not(:last-child) {
-  margin-right: 30px;
 }
