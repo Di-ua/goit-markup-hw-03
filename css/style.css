@@ -151,17 +151,23 @@ img {
 .hero-container {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--hero-background-color);
   text-align: center;
 }
 
 .overlay {
   max-width: 1600px;
-  height: 600px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid transparent;
-  background-image: url("../images/hero-bcg-img.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bcgimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
