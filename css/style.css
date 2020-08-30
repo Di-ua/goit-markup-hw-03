@@ -53,31 +53,34 @@ a {
 }
 
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
-  margin-right: 50px;
 }
 
-.contacts-item {
+.contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .navigation {
   display: flex;
   align-items: center;
+
   margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .site-nav {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .link .logotype {
-  color: black;
+  color: var(--primary-text-color);
 }
 
 .link.logo {
@@ -86,6 +89,8 @@ a {
 
 .contacts {
   display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 img {
@@ -120,6 +125,9 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -149,12 +157,13 @@ img {
 /* hero */
 
 .hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  text-align: center;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.overlay {
+  background-color: var(--hero-background-color);
+
   max-width: 1600px;
   min-height: 600px;
   margin-left: auto;
