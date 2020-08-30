@@ -145,6 +145,22 @@ img {
   text-decoration: none;
 }
 
+.contacts-item::before {
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.icon-mail::before {
+  height: 12px;
+  background-image: url(../images/envelope.svg);
+}
+
+.icon-number::before {
+  height: 16px;
+  background-image: url(../images/mobile.svg);
+}
+
 .contacts:hover,
 .contacts:focus {
   color: var(--accent-text-color);
@@ -184,7 +200,9 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+
   color: var(--hero-text-color);
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -230,10 +248,37 @@ img {
 .quolity-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.quolity-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  outline: 1px transparent;
+  background-repeat: no-repeat;
+  background-color: var(--secondary-background-color);
+  background-position: center;
+}
+
+.icon-microscope::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-intime::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-planing::before {
+  background-image: url(../images/planer.svg);
+}
+
+.icon-techno::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .quolity-title {
   font-weight: 700;
   font-size: 14px;
-
+  text-transform: uppercase;
   line-height: 1.14;
 }
 
