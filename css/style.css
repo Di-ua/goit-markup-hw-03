@@ -75,8 +75,6 @@ a {
 
 .site-nav {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .link .logotype {
@@ -125,9 +123,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .site-nav .link:hover,
@@ -143,22 +138,6 @@ img {
   color: var(--secondary-text-color);
   font-style: normal;
   text-decoration: none;
-}
-
-.contacts-item::before {
-  display: block;
-  content: "";
-  background-repeat: no-repeat;
-}
-
-.icon-mail::before {
-  height: 12px;
-  background-image: url(../images/envelope.svg);
-}
-
-.icon-number::before {
-  height: 16px;
-  background-image: url(../images/mobile.svg);
 }
 
 .contacts:hover,
