@@ -179,6 +179,7 @@ img {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 
   color: var(--hero-text-color);
 
